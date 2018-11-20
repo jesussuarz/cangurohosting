@@ -1,0 +1,19 @@
+{
+  "name": "cangurohosting",
+  "version": "1.0.0",
+  "description": "web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davilap/cangurohosting.git"
+  },
+  "author": "Donovan Avila Pardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davilap/cangurohosting/issues"
+  },
+  "homepage": "https://github.com/davilap/cangurohosting#readme"
+}

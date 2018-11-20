@@ -12,9 +12,8 @@
   },
   "author": "Donovan Avila Pardo",
   "license": "ISC",
-  "dependencies": {    
+  "dependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -24,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/davilap/cangurohosting/issues"
   },
-  "homepage": "https://github.com/davilap/cangurohosting#readme"
+  "homepage": "https://github.com/davilap/cangurohosting#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }

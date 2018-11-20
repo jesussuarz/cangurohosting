@@ -8,11 +8,11 @@ const gulp = require('gulp'),
 const paths = {
     styles: {
         src: './theme/**/*.scss',
-        dest: './output/'
+        dest: './dist/'
     },
     scripts: {
         src: './js/**/*.js',
-        dest: './output/'
+        dest: './dist/'
     }
 };
 

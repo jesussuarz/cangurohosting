@@ -34,9 +34,6 @@
 
 // Alignment
 
-.text-justify  { text-align: justify !important; }
-.text-wrap     { white-space: normal !important; }
-.text-nowrap   { white-space: nowrap !important; }
 .text-truncate { @include text-truncate; }
 
 // Responsive alignment
@@ -69,7 +66,6 @@
 .text-white { color: $white !important; }
 
 .text-body { color: $body-bg !important; }
-.text-muted { color: $text-muted !important; }
 
 .text-black-50 { color: rgba($black, .5) !important; }
 .text-white-50 { color: rgba($white, .5) !important; }

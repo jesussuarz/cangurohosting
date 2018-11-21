@@ -5654,15 +5654,6 @@ a.bg-dark:focus {
 .text-monospace {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
 
-.text-justify {
-  text-align: justify !important; }
-
-.text-wrap {
-  white-space: normal !important; }
-
-.text-nowrap {
-  white-space: nowrap !important; }
-
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5733,9 +5724,6 @@ a.bg-dark:focus {
 
 .text-body {
   color: #fff !important; }
-
-.text-muted {
-  color: #777777 !important; }
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important; }

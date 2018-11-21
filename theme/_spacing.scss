@@ -1,15 +1,7 @@
 //
 // Porting from Bootstrap 4
 //
-// Typical bootstrap 4 variables, but with our breakpoints/gutters and
-// linear increments, rather than the odd default values.. whinged about here:
-// https://github.com/twbs/bootstrap/issues/21702
-$grid-breakpoints: (
-  xs: 0,
-  sm: 768px,
-  md: 992px,
-  lg: 1200px
-) !default;
+
 $spacer:   $grid-gutter-width * .5 !default;
 $spacer-x: $spacer !default;
 $spacer-y: $spacer !default;
@@ -56,11 +48,6 @@ $spacers: (
     @content;
   }
 }
-
-
-//
-// ****************************** _spacing.scss ******************************
-// https://github.com/twbs/bootstrap/blob/v4-dev/scss/utilities/_spacing.scss
 
 // Width and height
 

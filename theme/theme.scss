@@ -1,7 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+$font-family-sans-serif:  'Source Sans Pro', sans-serif !default;
+
+$white:                #ffffff !default;
+$color-green:          #00A63F !default;
 
 
+.text-white { color: $white !important; }
  
 
 
-@import './bootstrap/_bootstrap'
+/*custom*/
+@import './bootstrap/_bootstrap';
+@import './spacing';
+
+@include bg-variant('.bg-green', $color-green);
+

@@ -6265,15 +6265,6 @@ a.bg-purple:focus {
   .text-lg-center {
     text-align: center !important; } }
 
-.text-lowercase {
-  text-transform: lowercase !important; }
-
-.text-uppercase, .initialism {
-  text-transform: uppercase !important; }
-
-.text-capitalize {
-  text-transform: capitalize !important; }
-
 .font-weight-light {
   font-weight: 300 !important; }
 

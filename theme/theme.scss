@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
 //== Colors
 //
@@ -28,9 +27,9 @@ $font-family-sans-serif:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"He
 
 $headings-line-height:        1.2 !default;
 
-$font-weight-lighter:         100 !default;
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
+$font-weight-lighter:         300 !default;
+$font-weight-light:           400 !default;
+$font-weight-normal:          500 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          900 !default; 
 
@@ -77,8 +76,8 @@ $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 
+ //== Simple flex columns
 
-     
 .row-flex, .row-flex > div[class*='col-'] {  
     display: -webkit-box;
     display: -moz-box;

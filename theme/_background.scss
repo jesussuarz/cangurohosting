@@ -3,3 +3,7 @@
 //
 
 @include bg-variant('.bg-dark', $dark);
+
+@include bg-variant('.bg-light', $light);
+
+@include bg-variant('.bg-purple', $purple);

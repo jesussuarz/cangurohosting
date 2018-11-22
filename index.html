@@ -31,56 +31,33 @@
 </head>
 
 <body>
+
   <div class="nopadding bheader_in" id="subir">
     <div class="container">
-      <div class=" bheader_head">
-
-        <div class="col-xs-4 col-md-3 hidden-xs hidden-sm hidden-md padding_header ">
-          <script>var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-            var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
-            var f = new Date();
-          </script><strong>
-            <script>document.write(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());</script></strong>
-
+      <div class="row row-flex row-flex-wrap align-items-center">
+        <div class="col-md-6 hidden-xs hidden-sm hidden-md">
+          <span> Miércoles, 21 de Noviembre de 2018</span>
         </div>
-        <div class="col-md-3 visible-md">
-          &nbsp;
-        </div>
-        <div class="col-xs-6 col-md-4 hidden-xs">
-
-        </div>
-
-        <div class="col-md-5 alinear_derecha nopadding">
-
-          <table class="pull-right" style="padding-left:10px;">
-            <tr>
-              <td style="padding-right:5px; font-weight: 700;"> Divisa
-              </td>
-
-              <td style="padding-right:5px;">
-                <form name="divisa">
-                  <select name="seleccionar" class="form-control-edit" onChange="go()">
-                    <option value="/ES">USD</option>
-                    <option value="/US">EUR</option>
-                    <option value="/ES">COP</option>
-                    <option value="/US">BSS</option>
-
-                  </select>
-                </form>
-
-              </td>
-              <td>
-                <div class="loginbtn">
-                  <div class="btn-group nopadding" role="group" aria-label="">
-                    <span class="btn btn-default shadow-none" data-toggle="modal" data-target="#exampleModal">
-                      <span class="fas fa-user" style="color:#FFF"></span> Iniciar sesión</span>
-                    <span id="register" class="btn btn-default active shadow-none"><span class="fas fa-user-plus"></span>
-                      Crear Cuenta</span>
-                  </div>
-                </div>
-              </td>
-            </tr>
-          </table>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end align-items-center">
+            Divisa
+            <form name="divisa">
+              <select name="seleccionar" class="form-control-edit" onChange="go()">
+                <option value="/ES">USD</option>
+                <option value="/US">EUR</option>
+                <option value="/ES">COP</option>
+                <option value="/US">BSS</option>
+              </select>
+            </form>
+            <div class="loginbtn">
+              <div class="btn-group nopadding" role="group" aria-label="">
+                <span class="btn btn-default shadow-none" data-toggle="modal" data-target="#exampleModal">
+                  <span class="fas fa-user"></span> Iniciar sesión</span>
+                <span id="register" class="btn btn-default active shadow-none"><span class="fas fa-user-plus"></span>
+                  Crear Cuenta</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -171,6 +148,8 @@
       </div>
     </div>
   </nav>
+
+
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -185,20 +164,14 @@
         <div class="text-left marquee-content container no-shape">
           <div class="row">
             <div class="col-md-8 text-center">
-              <span style="font-size: 37px;margin-bottom: 2.07576rem;font-family:Arial Black,sans-serif;">
+              <span class="display-1">
                 Mantente en contacto <br> con tus clientes...
               </span>
               <br> <br>
-              <p style="font-weight:bold;">Compra el dominio perfecto que se adapte a tu empresa, <br>tenemos más de
+              <p>Compra el dominio perfecto que se adapte a tu empresa, <br>tenemos más de
                 100 extensiones diferentes para ti</p>
-
-              <br>
-
               <a href="#" class="btn btn-success hvr-shrink btn-lg">
                 Quiero mi dominio </a>
-
-
-
             </div>
             <div class="col-md-4"></div>
           </div>
@@ -214,20 +187,15 @@
         <div class="text-left marquee-content container no-shape">
           <div class="row">
             <div class="col-md-8 text-center">
-              <span style="font-size: 37px;margin-bottom: 2.07576rem;font-family:Arial Black,sans-serif;">
+              <span class="display-1">
                 La seguridad de tus clientes<br> vale demasiado
               </span>
               <br> <br>
               <p style="font-weight:bold;">Cuida la seguridad de tus clientes con nuestros certificados SSL <br>de
                 ultima generación con cifrados de alta gama</p>
-
               <br>
-
               <a href="#" class="btn btn-success hvr-shrink btn-lg">
                 Quiero mi Certificado SSL </a>
-
-
-
             </div>
             <div class="col-md-4"></div>
           </div>
@@ -240,7 +208,7 @@
         <div class="text-left marquee-content container no-shape">
           <div class="row">
             <div class="col-md-8 text-center">
-              <span style="font-size: 37px;margin-bottom: 2.07576rem;font-family:Arial Black,sans-serif;">
+              <span class="display-1">
                 El almacenamiento perfecto <br>para tu sitio web
               </span>
               <br> <br>
@@ -266,7 +234,7 @@
         <div class="text-left marquee-content container no-shape">
           <div class="row">
             <div class="col-md-8 text-center">
-              <span style="font-size: 37px;margin-bottom: 2.07576rem;font-family:Arial Black,sans-serif;">
+              <span class="display-1">
                 Lleva tu negocio en linea mas alla <br> con nuestros Servidores Virtuales
               </span>
               <br> <br>
@@ -282,14 +250,11 @@
       </div>
 
 
-
-
-
       <div class="item imagen-slider" style="background-image:url(/dist/img/dedicado.jpg);">
         <div class="text-left marquee-content container no-shape">
           <div class="row">
             <div class="col-md-8 text-center">
-              <span style="font-size: 37px;margin-bottom: 2.07576rem;font-family:Arial Black,sans-serif;">
+              <span class="display-1">
                 Lleva tu empresa a otro nivel <br> con nuestros servidores dedicados
               </span>
               <br> <br>
@@ -317,140 +282,112 @@
   </div>
 
 
-  <div class="container-fluid hidden-xs linka" style="background-color:#9e42b5; color:#FFF; text-align:center; ">
+  <div class="bg-purple hidden-xs">
     <div class="container">
-      <h3 style="font-weight: 600;margin-bottom: 20px !important;">Ahorra un 10% en tu próximo pedido nuevo. Usa el
-        código <span style="color:#6e0c86">PROMO2019</span> durante el pago. <a href="#"><u>Detalles</u></a></h3>
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="container">
-      <br>
-
-      <p class="text-center dominio_font">Reserva el dominio perfecto</p>
-      <div class=" form-search">
-        <form method="post" action="../../domainchecker.php">
-          <input type="hidden" name="token" value="d384fd06f1bf8234ab55dd51b3cc00c0470a27e1">
-          <input type="hidden" name="direct" value="true">
-          <div class="input-group" style="margin: 0 auto;width:71%">
-
-            <input class="form-control input-lg col-xs-3" type="text" placeholder="Ingresa el nombre del dominio que deseas registrar"
-              pattern="[A-Za-z0-9]+" title="Solo letras y numeros, No se admiten puntos ni comas, solo el nombre del dominio sin la extencion o TLD."
-              name="domain" required>
-
-
-
-
-            <div class="input-group-btn">
-
-              <select class="form-control input-lg" style="font-size:18px; width:auto;" title="Por favor, seleccione el tipo de extencion o TLD"
-                name="ext" required>
-                <option value="">.TLDs</option>
-                <option>.com</option>
-                <option>.net</option>
-                <option>.org</option>
-                <option>.info</option>
-                <option>.co</option>
-                <option>.biz</option>
-                <option>.biz</option>
-                <option>.es</option>
-                <option>.eu</option>
-                <option>.com.ve</option>
-                <option>.net.ve</option>
-                <option>.org.ve</option>
-                <option>.info.ve</option>
-                <option>.co.ve</option>
-                <option>.website</option>
-                <option>.web.ve</option>
-              </select>
-
-
-
-            </div>
-
-            <div class="input-group-btn"> <button class="form-control btn-success input-lg" style="font-size:18px; "
-                type="submit">
-                <span class="fa fa-search"></span>
-                <span class="hidden-xs hidden-sm">Buscar</span>
-              </button>
-
-
-
-            </div>
-
-            <div class="input-group-btn"> <button class="btn btn-default btn-success input-lg" style="font-size:18px; "
-                type="submit" formaction="../../domainchecker.php?search=bulktransfer">
-                <span class="fas fa-arrows-alt-h"></span>
-                <span class="hidden-xs hidden-sm">Transferir</span>
-              </button>
-
-
-
-            </div>
-
-            <!-- /btn-group -->
-
-          </div>
-
-          <div style="margin: 0 auto;width:71%; padding-left:10%" class="hidden-xs hidden-sm">
-
-            <p class="text-muted"> <span class="fas fa-globe-americas"></span> Ej. dominio.com (nombre-dominio.TLD)</p>
-
-
-          </div>
-
-          <!--     
-                 <div class="text-center margin-top10">
-           <button type="submit" class="btn btn-success hvr-shrink btn-lg">
-           <span class="fa fa-search"></span> Buscar Nuevo Dominio</button> 
-           
-            <span class="visible-xs"><br></span>
-             
-           <button type="submit" class="btn btn-success hvr-shrink btn-lg" formaction="../../domainchecker.php?search=transfer">
-           <span class="fas fa-arrows-alt-h"></span> Transferir Dominio Existente</button>
-                        </div>
-                        
-                      -->
-        </form>
-
-
-
+      <div class="col-lg-12">
+        <h3 class="my-2 text-center text-white font-weight-light">Ahorra un 10% en tu próximo pedido nuevo. Usa el
+          código <span style="color:#6e0c86">PROMO2019</span> durante el pago. <a href="#"><u>Detalles</u></a></h3>
       </div>
     </div>
   </div>
 
-  <!-- MODIFICAR ESTE MARGEN -->
-  <br><br><br><br>
-  <div class="margin-top10"></div>
-  <!-- MODIFICAR ESTE MARGEN -->
 
-  <div class="text-center py-5" style="background:linear-gradient(45deg, #05c74f, #00a63f);">
+  <div class="container">
+    <div class="row py-5">
+      <div class="col-lg-12">
+        <h3 class="text-center m-0 display-1">Reserva el dominio perfecto</h3>
+        <div class=" form-search">
+          <form method="post" action="../../domainchecker.php">
+            <input type="hidden" name="token" value="d384fd06f1bf8234ab55dd51b3cc00c0470a27e1">
+            <input type="hidden" name="direct" value="true">
+            <div class="input-group" style="margin: 0 auto;width:71%">
+
+              <input class="form-control input-lg col-xs-3" type="text" placeholder="Ingresa el nombre del dominio que deseas registrar"
+                pattern="[A-Za-z0-9]+" title="Solo letras y numeros, No se admiten puntos ni comas, solo el nombre del dominio sin la extencion o TLD."
+                name="domain" required>
+
+              <div class="input-group-btn">
+
+                <select class="form-control input-lg" style="font-size:18px; width:auto;" title="Por favor, seleccione el tipo de extencion o TLD"
+                  name="ext" required>
+                  <option value="">.TLDs</option>
+                  <option>.com</option>
+                  <option>.net</option>
+                  <option>.org</option>
+                  <option>.info</option>
+                  <option>.co</option>
+                  <option>.biz</option>
+                  <option>.biz</option>
+                  <option>.es</option>
+                  <option>.eu</option>
+                  <option>.com.ve</option>
+                  <option>.net.ve</option>
+                  <option>.org.ve</option>
+                  <option>.info.ve</option>
+                  <option>.co.ve</option>
+                  <option>.website</option>
+                  <option>.web.ve</option>
+                </select>
+
+
+
+              </div>
+
+              <div class="input-group-btn"> <button class="form-control btn-success input-lg" style="font-size:18px; "
+                  type="submit">
+                  <span class="fa fa-search"></span>
+                  <span class="hidden-xs hidden-sm">Buscar</span>
+                </button>
+
+
+
+              </div>
+
+              <div class="input-group-btn"> <button class="btn btn-default btn-success input-lg" style="font-size:18px; "
+                  type="submit" formaction="../../domainchecker.php?search=bulktransfer">
+                  <span class="fas fa-arrows-alt-h"></span>
+                  <span class="hidden-xs hidden-sm">Transferir</span>
+                </button>
+
+
+
+              </div>
+
+              <!-- /btn-group -->
+
+            </div>
+
+            <div style="margin: 0 auto;width:71%; padding-left:10%" class="hidden-xs hidden-sm">
+              <p class="text-muted"> <span class="fas fa-globe-americas"></span> Ej. dominio.com (nombre-dominio.TLD)</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-success py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
+      <div class="row row-flex row-flex-wrap align-items-center">
+        <div class="col-lg-7">
           <div class="video_sec">
             <iframe src="https://player.vimeo.com/video/298315098?title=false&speed=false&fun=false&quality=720p&portrait=false&byline=false"
               class="vimeo"></iframe>
           </div>
         </div>
-        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12" style="color:#f8fff0">
-          <h2 style="position: relative;font-weight: 700;" class="font-size-text-video">Todo lo que tenemos para ti</h2>
-          <br>
-          <ul class="list-unstyled text-left" style="padding-left:10%">
-            <li><i class="fas fa-fire"></i> Corta Fuegos (Firewalls)</li>
-            <li><i class="fas fa-shield-alt"></i> AntiVirus en todos nuestros Servidores</li>
-            <li><i class="fas fa-clock"></i> Monitoreo en tiempo real las 24 horas</li>
-            <li><i class="fas fa-globe-americas"></i> Centro de Datos con CDN globales</li>
-            <li><i class="fas fa-code-branch"></i> Obtimizados para Dorker y Git</li>
-          </ul>
-          <h4 style="font-size: 20px;
-   
-    font-weight: 700;
-    margin-top: 30px;">Pasa mas tiempo construyendo
-            grandes cosas y menos tiempo configurando tu infrestructura.</h4>
-          <div class="text-center">
-            <span><a href="#" class="btn btn-danger btn-lg hvr-grow" style="margin-top: 7px; font-weight:bold;">Contactanos</a></span>
+        <div class="col-lg-5">
+          <div class="text-white">
+            <h2 class="m-0">Todo lo que tenemos para ti</h2>
+            <ul class="list-unstyled text-left">
+              <li><i class="fas fa-fire"></i> Corta Fuegos (Firewalls)</li>
+              <li><i class="fas fa-shield-alt"></i> AntiVirus en todos nuestros Servidores</li>
+              <li><i class="fas fa-clock"></i> Monitoreo en tiempo real las 24 horas</li>
+              <li><i class="fas fa-globe-americas"></i> Centro de Datos con CDN globales</li>
+              <li><i class="fas fa-code-branch"></i> Obtimizados para Dorker y Git</li>
+            </ul>
+            <p>Pasa mas tiempo construyendo
+              grandes cosas y menos tiempo configurando tu infrestructura.</p>
+            <span><a href="#" class="btn btn-danger btn-lg hvr-grow">Contactanos</a></span>
           </div>
         </div>
       </div>
@@ -458,12 +395,13 @@
   </div>
 
 
-  <div class="container-fluid" style="background-color: #f2f3f4;padding-top: 50px;padding-bottom: 70px;">
+  <div class="bg-light">
     <div class="container">
-      <p class="text-center dominio_font">Servidores de la mas Alta Gama!</p>
-      <br>
       <div class="row">
-        <div class="col-sm-4 ">
+        <div class="col-lg-12">
+          <h3 class="text-center m-0 display-1">Servidores de la mas Alta Gama!</h3>
+        </div>
+        <div class="col-sm-4">
           <div class="panel panel-default panel-heading-edit">
             <div class="text-center"><span class="plans-name">Hosting Basico</span></div>
             <div class="panel-body text-center">
@@ -471,8 +409,8 @@
               <span class="plans-color" style="text-align:left">Desde</span>
               <span class="plans">3$ </span>
               <p class=" plans-color">/ Por mes</p>
-              <img alt="" src="./dist/img/server-1.png"> <br>
-              <img alt="" src="./dist/img/cpanel2.png">
+              <img alt="" src="dist/img/server-1.png"> <br>
+              <img alt="" src="dist/img/cpanel2.png">
               <div>
                 <ul class="list-unstyled plans-color">
                   <li>Panel cPanel / Plesk </li>
@@ -499,9 +437,9 @@
               <span class="plans-color" style="text-align:left">Desde</span>
               <span class="plans">30$</span>
               <p class=" plans-color">/ Por mes</p>
-              <img alt="" src="./dist/img/server-2.png">
+              <img alt="" src="dist/img/server-2.png">
               <br>
-              <img alt="" src="./dist/img/virtuozzo2.png">
+              <img alt="" src="dist/img/virtuozzo2.png">
               <div>
                 <ul class="list-unstyled plans-color">
                   <li>Panel Virtuozzo</li>
@@ -526,9 +464,9 @@
               <span class="plans-color" style="text-align:left">Desde</span>
               <span class="plans">70$</span>
               <p class=" plans-color">/ Por mes</p>
-              <img alt="" src="./dist/img/server-3.png">
+              <img alt="" src="dist/img/server-3.png">
               <br>
-              <img alt="" src="./dist/img/linuxwin.png">
+              <img alt="" src="dist/img/linuxwin.png">
               <div>
                 <ul class="list-unstyled plans-color">
                   <li>Panel Via Area de Clientes (SSH)</li>
@@ -550,109 +488,81 @@
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="container text-center">
-
-
-      <p class="text-center dominio_font">Usamos las mejores tecnologías</p>
-
-
-      <br>
-      <img src="./dist/img/tecnologies.png" class="img-responsive" alt="Tecnologias">
-
-
-      <h2 class="text-center text-muted">Somos socios certificados la mayor parte de las tecnologías que utilizamos <i
-          class="far fa-handshake"></i></h2>
+      <h3 class="text-center m-0 display-2">Usamos las mejores tecnologías</h3>
+      <img src="dist/img/tecnologies.png" class="img-responsive" alt="Tecnologias">
+      <p class="text-center text-muted lead m-0">Somos socios certificados de la mayor parte de las tecnologías que
+        utilizamos</p>
     </div>
   </div>
 
-
-
-
-  <div class="container-fluid hidden-xs" style="background-color:#f5f7f8; ">
-    <div class="container text-center">
-
-
-      <p class="text-center dominio_font">¿Por qué elegirnos? </p>
-
-
-      <br>
-
-
-      <div class="clearfix"></div>
-
+  <div class="bg-light hidden-xs">
+    <div class="container py-4">
       <div class="row text-center">
-        <ol class="process2">
-          <li class="col-md-3 col-sm-6 col-xs-6"><i class="fas fa-rocket"></i>
-            <h4>Flexibilidad y escalabilidad</h4>
-            <div class="panel-edit-f panel-default panel-heading-edit scale ">
-              <div class="panel-body">
-                <p style="font-size: 15px;font-weight: 700;">Nuestros servicios son escalables y te permiten
-                  configurarlos a tu medida sin costos adicionales de configuración.<br /></p>
-              </div>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-6"> <i class="fas fa-award" style="color:#4095e8;"></i>
-            <h4>Garantía de devolución</h4>
-            <div class="panel-edit-f panel-default panel-heading-edit warranty">
-              <div class="panel-body">
-                <p style="font-size: 15px;font-weight: 700;">Todos nuestros servicios de alojamiento web (hosting),
-                  disponen de garantía por 30 días continuos.<br /><br /></p>
-              </div>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-6"> <i class="fas fa-life-ring" style="color:#f38f48;"></i>
-            <h4>Asistencia técnica 24/7</h4>
-            <div class="panel-edit-f panel-default panel-heading-edit support">
-              <div class="panel-body">
-                <p style="font-size: 15px;font-weight: 700;">Te atendemos las 24 horas, los 7 días a la semana y los
-                  365 días al año en soporte tanto vía tickets o llamadas. <br /> <br /> </p>
-              </div>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-6 col-xs-6" style="border-right: 1px dashed #7e8890;"> <i class="far fa-smile-wink"
-              style="color:#e20087;"></i>
-            <h4>Sea Feliz</h4>
-            <div class="panel-edit-f panel-default panel-heading-edit happy">
-              <div class="panel-body">
-                <p style="font-size: 15px;font-weight: 700;">
+        <div class="col-lg-12">
 
-                  Invierta menos tiempo configurando una infraestructura de hosting o alojamiento web, y dese paso a
-                  crear nuevas cosas.
-                </p>
-              </div>
-            </div>
-          </li>
+          <span class="text-center display-1">¿Por qué elegirnos? </span>
 
+          <div class="row text-center">
+            <ol class="process2">
+              <li class="col-md-3 col-sm-6 col-xs-6"><i class="fas fa-rocket"></i>
+                <h4>Flexibilidad y escalabilidad</h4>
+                <div class="panel-edit-f panel-default panel-heading-edit scale ">
+                  <div class="panel-body">
+                    <p style="font-size: 15px;font-weight: 700;">Nuestros servicios son escalables y te permiten
+                      configurarlos a tu medida sin costos adicionales de configuración.<br /></p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-3 col-sm-6 col-xs-6"> <i class="fas fa-award" style="color:#4095e8;"></i>
+                <h4>Garantía de devolución</h4>
+                <div class="panel-edit-f panel-default panel-heading-edit warranty">
+                  <div class="panel-body">
+                    <p style="font-size: 15px;font-weight: 700;">Todos nuestros servicios de alojamiento web (hosting),
+                      disponen de garantía por 30 días continuos.<br /><br /></p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-3 col-sm-6 col-xs-6"> <i class="fas fa-life-ring" style="color:#f38f48;"></i>
+                <h4>Asistencia técnica 24/7</h4>
+                <div class="panel-edit-f panel-default panel-heading-edit support">
+                  <div class="panel-body">
+                    <p style="font-size: 15px;font-weight: 700;">Te atendemos las 24 horas, los 7 días a la semana y
+                      los
+                      365 días al año en soporte tanto vía tickets o llamadas. <br /> <br /> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-3 col-sm-6 col-xs-6" style="border-right: 1px dashed #7e8890;"> <i class="far fa-smile-wink"
+                  style="color:#e20087;"></i>
+                <h4>Sea Feliz</h4>
+                <div class="panel-edit-f panel-default panel-heading-edit happy">
+                  <div class="panel-body">
+                    <p style="font-size: 15px;font-weight: 700;">
 
+                      Invierta menos tiempo configurando una infraestructura de hosting o alojamiento web, y dese paso
+                      a
+                      crear nuevas cosas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
 
-
-
-        </ol>
+        </div>
       </div>
-
-
-      <div class="clearfix"></div>
-
-
-
-
       <h2 class="text-center text-muted caracteristicas">El resto déjalo a nosotros </h2>
-
-
-
-
     </div>
   </div>
 
-
-  <div class="container testimonial text-center">
-    <div class="row">
+  <div class="container">
+    <div class="row text-center">
       <div class="col-lg-12">
         <span class="text-center display-1">Que dicen nuestros clientes</span>
-      </div>
-      <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <h2 class="lead">Empresas en todo el mundo están usando Canguro Hosting como su proveedor de alojamiento principal.</h2>
+        <p class="lead">Empresas en todo el mundo están usando Canguro Hosting como su proveedor de alojamiento
+          principal.</p>
       </div>
     </div>
 
@@ -670,7 +580,7 @@
               </div>
 
               <div class="col-md-3 col-sm-3 col-xs-12 mt-20">
-                <img src="./dist/img/kadmiel.png" class="img-responsive" alt="..."> </div>
+                <img src="dist/img/kadmiel.png" class="img-responsive" alt="..."> </div>
             </div>
 
             <div class="row">
@@ -695,7 +605,7 @@
 
 
               <div class="col-md-3 col-sm-3 col-xs-12">
-                <img src="./dist/img/jorge.png" class="img-responsive" alt="..."> </div>
+                <img src="dist/img/jorge.png" class="img-responsive" alt="..."> </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
@@ -717,7 +627,7 @@
               </div>
 
               <div class="col-md-3 col-sm-3 col-xs-12 mt-20">
-                <img src="./dist/img/natdroid.png" class="img-responsive" alt="..."> </div>
+                <img src="dist/img/natdroid.png" class="img-responsive" alt="..."> </div>
             </div>
 
             <div class="row">
@@ -738,7 +648,7 @@
                   preocupo más por mis clientes que por administrar mi servidor, son un gran equipo de trabajo.</p>
               </div>
               <div class="col-md-3 col-sm-3 col-xs-12">
-                <img src="./dist/img/appexpress.png" class="img-responsive" alt="..."> </div>
+                <img src="dist/img/appexpress.png" class="img-responsive" alt="..."> </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
@@ -748,18 +658,19 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-12 text-center">
+          <h2 class="font-weight-normal">Ya no tienes excusas, ¿Que esperas?</h2>
+        </div>
       </div>
     </div>
-
-    <h2>Ya no tienes excusas, ¿Que esperas?</h2>
   </div>
-
 
   <div class="bg-success">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h3 class="m-0 text-center py-2 text-white">¿Necesitas ayuda? Llama a nuestro equipo de asistencia técnica
+          <h3 class="m-0 text-center py-2 text-white font-weight-light">¿Necesitas ayuda? Llama a nuestro equipo de
+            asistencia técnica
             las
             24 horas del
             día, los 7 días
@@ -770,17 +681,16 @@
     </div>
   </div>
 
-  <div class="bg-dark text-white">
-    <div class="container">
-      <div class="row linka ">
+  <div class="bg-dark">
+    <div class="container text-white">
+      <div class="row m-auto">
         <div class="col-md-2 col-md-offset-1">
           <h3>Dominios</h3>
-          <p><a href="domainchecker"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Registro de Dominio</a></p>
-          <p><a href="domainchecker.php?search=bulktransfer"><span class="fa fa-check-circle-o" aria-hidden="true"></span>
-              Transferencia de Dominio</a></p>
-
-          <p><a href="http://panel.cangurohosting.com/reseller" target="_blank"><span class="fa fa-check-circle-o"
-                aria-hidden="true"></span> Panel de Revendedores</a></p>
+          <a href="domainchecker">Registro de Dominio</a>
+          <a href="domainchecker.php?search=bulktransfer"><span class="fa fa-check-circle-o" aria-hidden="true"></span>
+            Transferencia de Dominio</a>
+          <a href="http://panel.cangurohosting.com/reseller" target="_blank"><span class="fa fa-check-circle-o"
+              aria-hidden="true"></span> Panel de Revendedores</a>
           <p class="hidden-xs">
             <a href="https://validator.w3.org/nu/?doc=http://cangurohosting.com/index.php" target="_blank">
               <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-device-performance-semantics-storage.png"
@@ -790,66 +700,48 @@
           </p>
         </div>
         <div class="col-md-2">
-
           <h3>Servicios</h3>
-          <p><a href="hosting"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Alojamiento Web Linux</a></p>
-          <p><a href="hosting"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Alojamiento Web Windows</a></p>
-          <p><a href="servidores-dedicados"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Servidores
-              VPS</a>
-            <p><a href="servidores-dedicados"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Servidores
-                Dedicados</a></p>
-            <p><a href="certificados-ssl"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Certificados
-                SSL</a></p>
-            <p><a href="cart?gid=6"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Otros Servicios</a></p>
-
+          <a href="hosting">Alojamiento Web Linux</a>
+          <a href="hosting">Alojamiento Web Windows</a>
+          <a href="servidores-dedicados">Servidores VPS</a>
+          <a href="servidores-dedicados">Servidores Dedicados</a>
+          <a href="certificados-ssl">Certificados SSL</a>
+          <a href="cart?gid=6">Otros Servicios</a>
         </div>
         <div class="col-md-2">
           <h3>Compañía</h3>
-          <p><a href="nosotros"><span class="fa fa-check-circle-o" aria-hidden="true"></span> ¿Quiénes somos?</a></p>
-
-          <p><a href="announcements"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Noticias y Anuncios</a></p>
-          <p><a href="metodosdepagos"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Métodos de Pagos</a></p>
-
+          <a href="nosotros">¿Quiénes somos?</a>
+          <a href="announcements">Noticias y Anuncios</a>
+          <a href="metodosdepagos">Métodos de Pagos</a>
         </div>
         <div class="col-md-2">
           <h3>Soporte</h3>
-          <p><a href="ingresar"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Area de Clientes</a></p>
-          <p><a href="contact"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Formulario de Contacto</a></p>
-          <p><a href="submitticket?step=2&amp;deptid=3"><span class="fa fa-check-circle-o" aria-hidden="true"></span>
-              Enviar Ticket de Consulta</a></p>
-          <p><a href=""><span class="fa fa-check-circle-o" aria-hidden="true"></span> Chat en Linea</a></p>
-          <p><a href="knowledgebase"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Guías y Tutoriales</a></p>
-          <p><a href=" serverstatus"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Estado del Servidor</a></p>
-          <p><a href="downloads"><span class="fa fa-check-circle-o" aria-hidden="true"></span> Descargas</a></p>
-
+          <a href="ingresar">Area de Clientes</a>
+          <a href="contact">Formulario de Contacto</a>
+          <a href="submitticket?step=2&amp;deptid=3">Enviar Ticket de Consulta</a>
+          <a href="">Chat en Linea</a>
+          <a href="knowledgebase">Guías y Tutoriales</a>
+          <a href=" serverstatus">Estado del Servidor</a>
+          <a href="downloads">Descargas</a>
         </div>
         <div class="col-md-2">
-
-
           <h3>Contactanos</h3>
           <p><i class="fa fa-phone"></i> +57 341 1234-567</p>
-          <p><a href="skype:cangurohosting?call"><i class="fab fa-skype"></i> CanguroHosting</a></p>
-          <p> <a href="mailto:info@cangurohosting.com"><i class="fa fa-envelope"></i> Enviar Ticket</a></p>
-          <p><a href="networkissuesrss"><i class="fa fa-rss"></i> RSS</a></p>
-          <p><a href="metodosdepagos"><i class="fas fa-credit-card fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i>
-              <i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> </a></p>
-
-
+          <a href="skype:cangurohosting?call"><i class="fab fa-skype"></i> CanguroHosting</a>
+          <a href="mailto:info@cangurohosting.com"><i class="fa fa-envelope"></i> Enviar Ticket</a>
+          <a href="networkissuesrss"><i class="fa fa-rss"></i> RSS</a>
+          <a href="metodosdepagos"><i class="fas fa-credit-card fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i>
+            <i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> </a>
         </div>
-      </div>
-
-      <div class="row">
         <div class="col-lg-12">
           <hr style="background-size: 1px; border-top: 1px solid #444444;
-            border-color: #444444;">
-
+                border-color: #444444;">
           <p>
             AppOSTools S.A.S | N.I.T 900806501-3<br />
             Copyright © 2015 - 2018 Canguro Hosting. Todos los derechos reservados.
           </p>
         </div>
       </div>
-
     </div>
   </div>
 

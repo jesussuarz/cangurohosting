@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
   <!-- Hover Effects CSS -->
   <link href="hover/css/hover.css" rel="stylesheet" media="all">
   <!-- Custom CSS -->
@@ -33,7 +35,7 @@
 <body>
 
   <div class="nopadding bheader_in" id="subir">
-    <div class="container">
+    <div class="container py-1">
       <div class="row row-flex row-flex-wrap align-items-center">
         <div class="col-md-6 hidden-xs hidden-sm hidden-md">
           <span> Miércoles, 21 de Noviembre de 2018</span>
@@ -76,7 +78,6 @@
           <h2 class="modal-title" id="exampleModalLabel"><i class="fas fa-lock"></i> Iniciar Sesion</h2>
         </div>
         <div class="modal-body">
-
 
           <span class="btn btn-success btn-lg btn-block" style="text-align:left;"><span class="fas fa-user" style="color:#FFF"></span>
             Panel de Control Principal (Facturas y Servicios)</span><br>
@@ -150,7 +151,7 @@
   </nav>
 
 
-  <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div id="carousel" class="carousel slide wow fadeIn" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
       <li data-target="#carousel" data-slide-to="1"></li>
@@ -177,13 +178,9 @@
           </div>
         </div>
 
-
-
       </div>
 
       <div class="item imagen-slider" style=" background-image:url(dist/img/ssl.png);">
-
-
         <div class="text-left marquee-content container no-shape">
           <div class="row">
             <div class="col-md-8 text-center">
@@ -276,7 +273,7 @@
     </a>
   </div>
 
-  <div class="bg-purple hidden-xs">
+  <div class="bg-purple hidden-xs wow fadeInUp">
     <div class="container">
       <div class="col-lg-12">
         <h3 class="my-2 text-center text-white font-weight-bold">Ahorra un 10% en tu próximo pedido nuevo. Usa el
@@ -285,7 +282,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container wow fadeInUp">
     <div class="row py-5">
       <div class="col-lg-12">
         <h3 class="text-center m-0 display-2 font-weight-bold">Reserva el dominio perfecto</h3>
@@ -352,7 +349,7 @@
     </div>
   </div>
 
-  <div class="bg-success py-5">
+  <div class="bg-success py-5 wow fadeInUp">
     <div class="container">
       <div class="row row-flex row-flex-wrap align-items-center">
         <div class="col-lg-7">
@@ -380,8 +377,7 @@
     </div>
   </div>
 
-
-  <div class="bg-light">
+  <div class="bg-light wow fadeInUp">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -474,7 +470,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container wow fadeInUp">
     <div class="container text-center">
       <h3 class="text-center m-0 font-weight-bold display-2">Usamos las mejores tecnologías</h3>
       <img src="dist/img/tecnologies.png" class="img-responsive" alt="Tecnologias">
@@ -483,7 +479,7 @@
     </div>
   </div>
 
-  <div class="bg-light hidden-xs">
+  <div class="bg-light hidden-xs wow fadeInUp">
     <div class="container py-4">
       <div class="row">
         <div class="col-lg-12">
@@ -544,7 +540,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container wow fadeInUp">
     <div class="row text-center">
       <div class="col-lg-12">
         <span class="text-center font-weight-bold display-2">Que dicen nuestros clientes</span>
@@ -638,7 +634,7 @@
     </div>
   </div>
 
-  <div class="bg-success">
+  <div class="bg-success wow fadeInUp">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -654,7 +650,7 @@
     </div>
   </div>
 
-  <div class="bg-dark">
+  <div class="bg-dark wow fadeInUp">
     <div class="container text-white">
       <div class="row m-auto">
         <div class="col-md-2 col-md-offset-1">
@@ -722,6 +718,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
   <script src="js/popper.min.js"></script>
 
 
@@ -754,6 +753,8 @@
     -->
 
   <script>
+
+    new WOW().init();
 
     var addthis_config = {
       ui_language: "es"

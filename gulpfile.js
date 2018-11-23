@@ -6,15 +6,33 @@ const gulp = require('gulp'),
     browserSync = require("browser-sync").create();
 
 const paths = {
-    styles: {
-        src: './theme/**/*.scss',
+    themes: {
+        src: './theme/*.scss',
         dest: './dist/css/'
+    },
+    styles: {
+        src: './theme/page/*.scss',
+        dest: './dist/css/page/'
     },
     scripts: {
         src: './js/**/*.js',
         dest: './dist/js/'
     }
 };
+
+function themes() {
+    return gulp
+        .src(paths.themes.src, {
+            sourcemaps: true
+        })
+        .pipe(sass())
+        .pipe(rename({
+            basename: 'main',
+            suffix: '.min'
+        }))
+        .pipe(browserSync.stream())
+        .pipe(gulp.dest(paths.themes.dest));
+}
 
 function styles() {
     return gulp
@@ -23,7 +41,6 @@ function styles() {
         })
         .pipe(sass())
         .pipe(rename({
-            basename: 'main',
             suffix: '.min'
         }))
         .pipe(browserSync.stream())
@@ -36,7 +53,7 @@ function scripts() {
             sourcemaps: true
         })
         .pipe(uglify())
-        .pipe(concat('main.min.js'))        
+        .pipe(concat('main.min.js'))
         .pipe(gulp.dest(paths.scripts.dest));
 }
 
@@ -45,11 +62,12 @@ function watch() {
         server: './'
     });
     gulp.watch(paths.scripts.src, scripts);
+    gulp.watch(paths.themes.src, themes);
     gulp.watch(paths.styles.src, styles);
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
-var build = gulp.parallel(styles, scripts, watch);
+var build = gulp.parallel(themes, styles, scripts, watch);
 
 gulp.task(build);
 gulp.task('default', build);

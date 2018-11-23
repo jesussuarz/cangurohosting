@@ -28,27 +28,30 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="dist/css/main.min.css">
   <!-- Custom CSS -->
-  <link href="dist/css/page/home.min.css" rel="stylesheet" media="all">
+  <link href="dist/css/page/home.min.css" rel="stylesheet">
 
 
   <!-- Hover Effects CSS -->
   <link href="hover/css/hover.css" rel="stylesheet" media="all">
-  <!-- Custom CSS -->
-  <link href="custom.css" rel="stylesheet" media="all">
+
 </head>
 
 <body>
 
-  <div class="nopadding bheader_in" id="subir">
+  <div class="p-0 bheader_in" id="subir">
     <div class="container py-1">
       <div class="row row-flex row-flex-wrap align-items-center">
-        <div class="col-md-6 hidden-xs hidden-sm hidden-md">
-          <span> Miércoles, 21 de Noviembre de 2018</span>
+        <div class="col-md-6 hidden-xs hidden-sm hidden-md social-network">
+
+          <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href=""><i class="fab fa-twitter fa-lg"></i></a>
+          <a href=""><i class="fab fa-slack fa-lg"></i></a>
+          <a href=""><i class="fab fa-skype fa-lg"></i></a>
         </div>
         <div class="col-md-6">
           <div class="d-flex justify-content-end align-items-center">
-            Divisa
-            <form name="divisa">
+            <span class="font-weight-light">Divisa</span>
+            <form name="divisa" class="px-1">
               <select name="seleccionar" class="form-control-edit" onChange="go()">
                 <option value="/ES">USD</option>
                 <option value="/US">EUR</option>
@@ -136,7 +139,58 @@
         <ul class="nav navbar-nav nav-item " style="font-weight: bold;">
           <li><a href="#"><span class="fa fa-home fa-lg"></span></a></li>
           <li class="active"><a href="#">Dominios</a></li>
-          <li class=""><a href="#">Hosting</a></li>
+
+          <li class="dropdown mega-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>
+            <div class="dropdown-menu mega-dropdown-menu">
+              <ul class="container pt-1 pb-2">
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Men Collection</li>
+                    <li>
+                      <img src="https://picsum.photos/215/150/?random" alt="">
+                      <h4><small>Summer dress floral prints</small></h4>
+                      <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default"
+                        type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Features</li>
+                    <li><a href="#">Auto Carousel</a></li>
+                    <li><a href="#">Carousel Control</a></li>
+                    <li><a href="#">Left & Right Navigation</a></li>
+                    <li><a href="#">Four Columns Grid</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Fonts</li>
+                    <li><a href="#">Glyphicon</a></li>
+                    <li><a href="#">Google Fonts</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Plus</li>
+                    <li><a href="#">Navbar Inverse</a></li>
+                    <li><a href="#">Pull Right Elements</a></li>
+                    <li><a href="#">Coloured Headers</a></li>
+                    <li><a href="#">Primary Buttons & Default</a></li>
+                  </ul>
+                </li>
+                <li class="col-sm-3">
+                  <ul>
+                    <li class="dropdown-header">Much more</li>
+                    <li><a href="#">Easy to Customize</a></li>
+                    <li><a href="#">Calls to action</a></li>
+                    <li><a href="#">Custom Fonts</a></li>
+                    <li><a href="#">Slide down on Hover</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
           <li class=""><a href="#">Servidores Dedicados</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mas Productos <b class="caret"></b></a>
@@ -148,6 +202,7 @@
             </ul>
           </li>
         </ul>
+
         <div class="nav navbar-nav pull-right">
           <span><a href="#" class="btn success hvr-grow" style="margin-top: 7px;">Ordenar Ahora! <span class="fas fa-shopping-cart"></span></a></span>
         </div>
@@ -269,11 +324,11 @@
 
     </div>
     <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-chevron-right fas fa-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Atras</span>
     </a>
     <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-chevron-right fas fa-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Siguiente</span>
     </a>
   </div>
@@ -289,15 +344,15 @@
 
   <div class="container">
     <div class="row py-5">
-      <div class="col-lg-12">
+      <div class="col-lg-10 col-lg-offset-1">
         <h3 class="text-center mt-0 mb-1 display-2 font-weight-bold">Reserva el dominio perfecto</h3>
         <div class=" form-search">
           <form method="post" action="../../domainchecker.php">
             <input type="hidden" name="token" value="d384fd06f1bf8234ab55dd51b3cc00c0470a27e1">
             <input type="hidden" name="direct" value="true">
-            <div class="input-group" style="margin: 0 auto;width:71%">
+            <div class="input-group">
 
-              <input class="form-control input-lg col-xs-3" type="text" placeholder="Ingresa el nombre del dominio que deseas registrar"
+              <input class="form-control input-lg" type="text" placeholder="Ingresa el nombre del dominio que deseas registrar"
                 pattern="[A-Za-z0-9]+" title="Solo letras y numeros, No se admiten puntos ni comas, solo el nombre del dominio sin la extencion o TLD."
                 name="domain" required>
 
@@ -325,28 +380,24 @@
                 </select>
               </div>
 
-              <div class="input-group-btn"> <button class="form-control btn-success input-lg" style="font-size:18px; "
-                  type="submit">
+              <div class="input-group-btn">
+                <button class="form-control btn-success input-lg" style="font-size:18px; " type="submit">
                   <span class="fa fa-search"></span>
                   <span class="hidden-xs hidden-sm">Buscar</span>
                 </button>
-
               </div>
 
-              <div class="input-group-btn"> <button class="btn btn-default btn-success input-lg" style="font-size:18px; "
-                  type="submit" formaction="../../domainchecker.php?search=bulktransfer">
+              <div class="input-group-btn">
+                <button class="btn btn-default btn-success input-lg" style="font-size:18px; " type="submit" formaction="../../domainchecker.php?search=bulktransfer">
                   <span class="fas fa-arrows-alt-h"></span>
                   <span class="hidden-xs hidden-sm">Transferir</span>
                 </button>
-
               </div>
-
-              <!-- /btn-group -->
-
             </div>
 
-            <div style="margin: 0 auto;width:71%; padding-left:10%" class="hidden-xs hidden-sm">
-              <p class="text-muted"> <span class="fas fa-globe-americas"></span> Ej. dominio.com (nombre-dominio.TLD)</p>
+            <div class="hidden-xs hidden-sm mt-1">
+              <p class="text-center text-muted m-0"> <span class="fas fa-globe-americas"></span> Ej. dominio.com
+                (nombre-dominio.TLD)</p>
             </div>
           </form>
         </div>
@@ -363,10 +414,10 @@
               class="vimeo"></iframe>
           </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 pl-lg-4">
           <div class="text-white">
-            <h2 class="m-0">Todo lo que tenemos para ti</h2>
-            <ul class="list-unstyled text-left">
+            <h2 class="mt-0">Todo lo que tenemos para ti</h2>
+            <ul class="list-unstyled my-1 services">
               <li><i class="fas fa-fire"></i> Corta Fuegos (Firewalls)</li>
               <li><i class="fas fa-shield-alt"></i> AntiVirus en todos nuestros Servidores</li>
               <li><i class="fas fa-clock"></i> Monitoreo en tiempo real las 24 horas</li>
@@ -478,12 +529,13 @@
 
   <div class="container">
     <div class="row my-5">
-      <div class="col-lg-12">
-        <h3 class="text-center mt-0 mb-5 font-weight-bold display-2">Usamos las mejores tecnologías</h3>
+      <div class="col-lg-12 text-center">
+        <h3 class="mt-0 mb-5 font-weight-bold display-2">Usamos las mejores tecnologías</h3>
         <img src="dist/img/tecnologies.png" class="img-responsive" alt="Tecnologias">
-        <p class="text-center text-muted lead mb-0 mt-3">Somos socios certificados de la mayor parte de las tecnologías
+        <h3 class="text-muted mb-0 mt-3 font-weight-light">Somos socios certificados de la mayor parte de
+          las tecnologías
           que
-          utilizamos</p>
+          utilizamos</h3>
       </div>
     </div>
   </div>
@@ -539,136 +591,112 @@
               </li>
             </ol>
           </div>
-
-          <p class="text-center text-muted m-0 lead">El resto déjalo a nosotros </p>
-
+          <h3 class="text-center text-muted mb-0 mt-3 font-weight-light">El resto déjalo a nosotros </h3>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container my-5">
     <div class="row">
-      <div class="col-lg-12">
-        <span class="text-center font-weight-bold display-2">Que dicen nuestros clientes</span>
+      <div class="col-lg-12 text-center">
+        <h3 class="font-weight-bold display-2 mt-0 mb-4">Que dicen nuestros clientes</h3>
         <p class="lead">Empresas en todo el mundo están usando Canguro Hosting como su proveedor de alojamiento
           principal.</p>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-12">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12 panel panel-default panel-heading-edit-testimonials">
+          <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-12 text-justify ">
               <p>Canguro Hosting es una solución perfecta para cualquier persona que necesite ampliar su alcance.
-                Tienen un amplio conocimiento sobre lo que hacen. Es una empresa con unos altos valores agregados
-                en sus servicios, lo cual, la hace diferente a sus competidores. Estoy satisfecho con su trabajo,
-                Son profesionales de alta calidad, me siento seguro de
+                Tienen un amplio conocimiento sobre lo que hacen. Es una empresa con unos altos valores agregados en
+                sus servicios, lo cual, la hace diferente a sus competidores. Estoy satisfecho con su trabajo, Son
+                profesionales de alta calidad, me siento seguro de
                 haber alojado mi sitio web con ellos.</p>
-              <!-- <img src="dist/img/kadmiel.png" class="img-circle" alt="..."> -->
-
-              <span> Elvis Marmol - CEO Kadmiel Projects and Productions -
-                Colombia</span>
             </div>
-
-            <div class="item">
-              <p>Soy Presidente de CROMAX Studios, Una productora audiovisual. Mi experiencia con Canguro Hosting
-                es desde hace más de 5 años, Son una empresa en la cual confió plenamente, ya que han demostrado
-                que son una empresa muy honesta y confiable en sus servicios. Un grato abrazo y saludo de parte de
-                todo mi equipo de Cromax Studios.</p>
-              <!-- <img src="dist/img/jorge.png" class="img-circle" alt="..."> -->
-              <span class="text-muted">Jorge Rincon</span> - <span><a>CEO Cromax Studios - Venezuela</a></span>
-            </div>
-
-            <div class="item">
-              <p>Realmente Canguro Hosting representa la automatización plena de mi empresa, Gracias a su equipo
-                hemos logrado nuestros objetivos, crecer como negocio en línea, Estamos muy contentos de contar con
-                su talento.</p>
-              <!-- <img src="dist/img/natdroid.png" class="img-circle" alt="..."> -->
-              <span class="text-muted">Nataly Lopez </span> - <span><a>Presidenta de NatDroid - Australia </a></span>
-            </div>
-
-            <div class="item">
-              <p>Canguro Hosting me ha prestado apoyo total dentro de mi empresa, gracias a ellos he podido
-                resolver muchos de los problemas que se presentan a la hora de manejar muchos clientes, ahora me
-                preocupo más por mis clientes que por administrar mi servidor, son un gran equipo de trabajo.</p>
-              <!-- <img src="dist/img/appexpress.png" class="img-circle" alt="..."> -->
-              <span class="text-muted">Eusebio Blasco</span> - <span><a>Fundador de AppExpress - España</a></span>
+            <div class="col-md-3 col-sm-3 col-xs-12 mt-20">
+              <img src="dist/img/kadmiel.png" class="img-responsive" alt="..."> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h5><em>
+                  <span class="text-muted">Elvis Marmol</span> - <span><a>CEO Kadmiel Projects and Productions -
+                      Colombia</a></span></em></h5>
             </div>
           </div>
-
-          <!-- Indicators -->
-          <ol class="list-unstyled carousel-indicators_">
-            <li data-target="#myCarousel" data-slide-to="0"> <img src="dist/img/kadmiel.png" class="img-circle" alt="..."
-                width="50"></li>
-            <li data-target="#myCarousel" data-slide-to="1"><img src="dist/img/jorge.png" class="img-circle" alt="..."
-                width="50"> </li>
-            <li data-target="#myCarousel" data-slide-to="2"><img src="dist/img/natdroid.png" class="img-circle" alt="..."
-                width="50"></li>
-            <li data-target="#myCarousel" data-slide-to="3"><img src="dist/img/appexpress.png" class="img-circle" alt="..."
-                width="50"></li>
-          </ol>
-
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12 panel panel-default panel-heading-edit-testimonials">
+          <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-12 text-justify">
+              <p>Soy Presidente de CROMAX Studios, Una productora audiovisual. Mi experiencia con Canguro Hosting es
+                desde hace más de 5 años, Son una empresa en la cual confió plenamente, ya que han demostrado que son
+                una empresa muy honesta y confiable en sus servicios. Un grato abrazo y saludo de parte de todo mi
+                equipo de Cromax Studios.</p> <br>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <img src="dist/img/jorge.png" class="img-responsive" alt="..."> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h5><em>
+                  <span class="text-muted">Jorge Rincon</span> - <span><a>CEO Cromax Studios - Venezuela</a></span></em></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12 panel panel-default panel-heading-edit-testimonials">
+          <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-12 text-justify ">
+              <p>Realmente Canguro Hosting representa la automatización plena de mi empresa, Gracias a su equipo hemos
+                logrado nuestros objetivos, crecer como negocio en línea, Estamos muy contentos de contar con su
+                talento.</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12 mt-20">
+              <img src="dist/img/natdroid.png" class="img-responsive" alt="..."> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h5><em>
+                  <span class="text-muted">Nataly Lopez </span> - <span><a>Presidenta de NatDroid - Australia </a></span></em></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-12 col-sm-12 col-xs-12 panel panel-default panel-heading-edit-testimonials">
+          <div class="row">
+            <div class="col-md-9 col-sm-9 col-xs-12 text-justify">
+              <p>Canguro Hosting me ha prestado apoyo total dentro de mi empresa, gracias a ellos he podido resolver
+                muchos de los problemas que se presentan a la hora de manejar muchos clientes, ahora me preocupo más
+                por mis clientes que por administrar mi servidor, son un gran equipo de trabajo.</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <img src="dist/img/appexpress.png" class="img-responsive" alt="..."> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <h5><em>
+                  <span class="text-muted">Eusebio Blasco</span> - <span><a>Fundador de AppExpress - España</a></span></em></h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-12 ">
-        <h2 class="text-center font-weight-normal">Ya no tienes excusas, ¿Que esperas?</h2>
+        <h3 class="text-center font-weight-light">Ya no tienes excusas, ¿Que esperas?</h3>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row row-flex row-flex-wrap">
-      <div class="col-lg-6 text-white py-3 pr-3 bg-success justify-content-end">
-        <div class="text-right">
-          <h3 class="m-0 font-weight-light">¿Necesitas ayuda?</h3>
-          <h3 class="m-0 font-weight-bold display-3"> +57 341-1234-567</h3>
-        </div>
-      </div>
-      <div class="col-lg-6 pl-3  bg-purple align-items-center">
-        <div>
-          <h3 class="mt-0 mb-1 text-white">Subscribe for our promoteletter</h3>
-          <div class="input-group">
-            <input class="form-control input-lg " type="text" placeholder="Your email address" name="domain" required="">
-            <div class="input-group-btn"> <button class="btn btn-default btn-success input-lg" type="submit" formaction="../../domainchecker.php?search=bulktransfer">
-                <span class="hidden-xs hidden-sm">Subscribe</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h3>Latest News</h3>
-
-        <div class="media">
-          <div class="media-left">
-            <img class="media-object" src="https://picsum.photos/200/150" alt="...">
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Media heading</h4>
-            ...
-          </div>
-        </div>
-
-      </div>
-      <div class="col-lg-6">
-
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="bg-success">
+  <div class="bg-success">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -682,18 +710,18 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="bg-dark">
-    <div class="container text-white">
-      <div class="row m-auto">
+    <div class="container py-3 foot">
+      <div class="row text-white">
         <div class="col-md-2 col-md-offset-1">
           <h3>Dominios</h3>
-          <a href="domainchecker">Registro de Dominio</a>
-          <a href="domainchecker.php?search=bulktransfer"><span class="fa fa-check-circle-o" aria-hidden="true"></span>
-            Transferencia de Dominio</a>
-          <a href="http://panel.cangurohosting.com/reseller" target="_blank"><span class="fa fa-check-circle-o"
-              aria-hidden="true"></span> Panel de Revendedores</a>
+          <p><a href="domainchecker">Registro de Dominio</a></p>
+          <p><a href="domainchecker.php?search=bulktransfer"><span class="fa fa-check-circle-o" aria-hidden="true"></span>
+              Transferencia de Dominio</a></p>
+          <p><a href="http://panel.cangurohosting.com/reseller" target="_blank"><span class="fa fa-check-circle-o"
+                aria-hidden="true"></span>Panel de Revendedores</a></p>
           <p class="hidden-xs">
             <a href="https://validator.w3.org/nu/?doc=http://cangurohosting.com/index.php" target="_blank">
               <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-device-performance-semantics-storage.png"
@@ -704,45 +732,57 @@
         </div>
         <div class="col-md-2">
           <h3>Servicios</h3>
-          <a href="hosting">Alojamiento Web Linux</a>
-          <a href="hosting">Alojamiento Web Windows</a>
-          <a href="servidores-dedicados">Servidores VPS</a>
-          <a href="servidores-dedicados">Servidores Dedicados</a>
-          <a href="certificados-ssl">Certificados SSL</a>
-          <a href="cart?gid=6">Otros Servicios</a>
+          <p><a href="hosting">Alojamiento Web Linux</a></p>
+          <p><a href="hosting">Alojamiento Web Windows</a></p>
+          <p><a href="servidores-dedicados">Servidores VPS</a></p>
+          <p><a href="servidores-dedicados">Servidores Dedicados</a></p>
+          <p><a href="certificados-ssl">Certificados SSL</a></p>
+          <p><a href="cart?gid=6">Otros Servicios</a></p>
         </div>
         <div class="col-md-2">
           <h3>Compañía</h3>
-          <a href="nosotros">¿Quiénes somos?</a>
-          <a href="announcements">Noticias y Anuncios</a>
-          <a href="metodosdepagos">Métodos de Pagos</a>
+          <p><a href="nosotros">¿Quiénes somos?</a></p>
+          <p><a href="announcements">Noticias y Anuncios</a></p>
+          <p><a href="metodosdepagos">Métodos de Pagos</a></p>
         </div>
         <div class="col-md-2">
           <h3>Soporte</h3>
-          <a href="ingresar">Area de Clientes</a>
-          <a href="contact">Formulario de Contacto</a>
-          <a href="submitticket?step=2&amp;deptid=3">Enviar Ticket de Consulta</a>
-          <a href="">Chat en Linea</a>
-          <a href="knowledgebase">Guías y Tutoriales</a>
-          <a href=" serverstatus">Estado del Servidor</a>
-          <a href="downloads">Descargas</a>
+          <p><a href="ingresar">Area de Clientes</a></p>
+          <p><a href="contact">Formulario de Contacto</a></p>
+          <p><a href="submitticket?step=2&amp;deptid=3">Enviar Ticket de Consulta</a></p>
+          <p><a href="">Chat en Linea</a></p>
+          <p><a href="knowledgebase">Guías y Tutoriales</a></p>
+          <p><a href=" serverstatus">Estado del Servidor</a></p>
+          <p><a href="downloads">Descargas</a></p>
         </div>
         <div class="col-md-2">
           <h3>Contactanos</h3>
           <p><i class="fa fa-phone"></i> +57 341 1234-567</p>
-          <a href="skype:cangurohosting?call"><i class="fab fa-skype"></i> CanguroHosting</a>
-          <a href="mailto:info@cangurohosting.com"><i class="fa fa-envelope"></i> Enviar Ticket</a>
-          <a href="networkissuesrss"><i class="fa fa-rss"></i> RSS</a>
-          <a href="metodosdepagos"><i class="fas fa-credit-card fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i>
-            <i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> </a>
+          <p><a href="skype:cangurohosting?call"><i class="fab fa-skype"></i> CanguroHosting</a></p>
+          <p><a href="mailto:info@cangurohosting.com"><i class="fa fa-envelope"></i> Enviar Ticket</a></p>
+          <p><a href="networkissuesrss"><i class="fa fa-rss"></i> RSS</a></p>
+          <p><a href="metodosdepagos"><i class="fas fa-credit-card fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i>
+              <i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> </a></p>
         </div>
         <div class="col-lg-12">
           <hr style="background-size: 1px; border-top: 1px solid #444444;
                 border-color: #444444;">
-          <p>
+        </div>
+      </div>
+      <div class="row row-flex row-flex-wrap align-items-center">
+        <div class="col-lg-6">
+          <p class="m-0 text-white">
             AppOSTools S.A.S | N.I.T 900806501-3<br />
             Copyright © 2015 - 2018 Canguro Hosting. Todos los derechos reservados.
           </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="w-100 text-lg-right social-network">
+            <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href=""><i class="fab fa-twitter fa-lg"></i></a>
+            <a href=""><i class="fab fa-slack fa-lg"></i></a>
+            <a href=""><i class="fab fa-skype fa-lg"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -795,17 +835,18 @@
     }
 
     $(function () {
+
+
       $(".dropdown").hover(
         function () {
-          $('.dropdown-menu', this).stop(true, true).fadeIn("fast");
+          $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("fast");
           $(this).toggleClass('open');
-          $('b', this).toggleClass("caret caret-up");
         },
         function () {
-          $('.dropdown-menu', this).stop(true, true).fadeOut("fast");
+          $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut("fast");
           $(this).toggleClass('open');
-          $('b', this).toggleClass("caret caret-up");
-        });
+        }
+      );
     });
 
 

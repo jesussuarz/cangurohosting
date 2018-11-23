@@ -1,16 +1,4 @@
-/* CSS Custom */
 
-/* DEGRADADO DE DOS COLORES 
-background: linear-gradient(45deg, #40be80, #1d27b7);
-*/       
-body {
-	position:relative;
-	min-height:100%;
-	width:100%;
-	height:100%;
-	top:0px;
-	}
-/* BORDE PARA SELECT 0 */
 :focus {outline:0;}	
 ::-moz-focus-inner {outline:0;} 
 /* background selections */	
@@ -47,7 +35,63 @@ body {
 ::-webkit-scrollbar-thumb:active {
     background-color: #05c155;
 }
-/* /Scroll */
+
+
+.social-network{
+    a{
+        margin-right: 15px
+    }
+}
+
+.services{
+    li{
+        margin:5px 0;
+    }
+}
+
+.foot{
+    a{
+        color:#fff;
+        margin-bottom: 4px;        
+    }
+    .social-network{
+        a{
+            margin-left: 15px
+        }
+    }
+}
+
+
+.mega-dropdown {
+    position: static !important;
+  }
+  .mega-dropdown-menu {
+      padding: 20px 0px;
+      width: 100%;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+  }
+  .mega-dropdown-menu > li > ul {
+    padding: 0;
+    margin: 0;
+  }
+  .mega-dropdown-menu  ul  {
+    list-style: none;
+  }
+  .mega-dropdown-menu  a {
+    display: block;
+    color: #222;
+    padding: 3px 5px;
+    font-weight: 400
+  }
+  
+  .mega-dropdown-menu .dropdown-header {
+    font-size: 18px;
+    color: #00A63F;
+    padding: 0 60px 5px 0;
+    line-height: 30px;
+  }
+  
 
 /* bar pre load on page top */
 .pace {
@@ -75,26 +119,15 @@ body {
   border-radius: 10px;
 }
 
-
 /* pre load bar end */
-
-	/* barra header inicio*/	
-.bheader_in {
-	/* height:34px; */
-	/* background-color:#222222; */
-	/* background-color:#232323; */
-	color:#1b1b1b;
-	/* margin:0px; */
+/* barra header inicio*/	
+.bheader_in {	
+	color:#1b1b1b;	
 	}
 .bheader_menu {
-	/* height:60px;
-	margin:0px; */
 	background-color:#212121;
 	}
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
+
 	
 .loginbtn .btn-default {
 	background-color:#343a40;
@@ -126,7 +159,6 @@ body {
 .nav-item > li {
 	    border-right:1px solid #e6e6e6;
 	}
-
 
 .hvr-underline-from-center:before {
   content: "";
@@ -355,27 +387,10 @@ color:#90c93d !important;
 }
 
 .dropdown.open .dropdown-menu {
-    max-height: 200px;
+    max-height: max-content;
     opacity: 1;
 }
 /* FIN ANIMACION MENU PRINCIPAL */ 
-
-/* Dropdown Menus PAIS | DIVISA | LENGUAJE */
-.dropdown-select {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown-select .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: #2c2c2c;
-    padding: 2px 3px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
 
 .dropdown-content {
     display: none;
@@ -412,19 +427,6 @@ color:#90c93d !important;
     padding: .5rem 0;
     color: #6c757d;
 }
-
-
-
-/* MARGEN DE ESPACIO */
-.margin-top10 {
-	margin-top:30px;
-	}
-.margin-10 {
-	
-	margin-left: 20%;
-    margin-right: 20%;
-	
-	}	
 	
 	
 /* PLANES DE SERVIDORES */		
@@ -465,7 +467,7 @@ font-size: 36px;
 .video_sec {
   width: 100%;
   height: 413px;
-  background: url(dist/img/newbgpublicidad.png) no-repeat;
+  background: url(/dist/img/newbgpublicidad.png) no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 43px 41px 0 37px;
@@ -503,16 +505,7 @@ font-size: 36px;
 	}
 	.font-size-text-video {
 		font-size:  25px;
-	}
-	
-	
-	.dominio_font {
-	font-family: 'Archivo Black', sans-serif;
-	font-size:3em;
-	margin-top:20px;
-	font-weight: 700 !important;
-	}
-	
+	}	
 }
 @media(max-width: 767px){
   .video_sec {
@@ -531,16 +524,8 @@ font-size: 36px;
 		font-size:  22px;
 	}
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-	    margin-left:0 !important;
-	
+	    margin-left:0 !important;	
 	}	
-	.dominio_font {
-	font-family: 'Archivo Black', sans-serif;
-	font-size:2em;
-	margin-top:20px;
-	font-weight: 700 !important;
-	}
-	
     }
 
 .vimeo {
@@ -548,19 +533,6 @@ font-size: 36px;
 	height:300px;
 	border:none;
 	}
-
-.caret-up {
-    width: 0; 
-    height: 0; 
-    border-left: 4px solid rgba(0, 0, 0, 0);
-    border-right: 4px solid rgba(0, 0, 0, 0);
-    border-bottom: 4px solid;
-    
-    display: inline-block;
-    margin-left: 2px;
-    vertical-align: middle;
-}
-
 
 .panel-heading-edit {
 padding: 0px !important;
@@ -580,10 +552,7 @@ border-radius: 5px !important;
 }	
 
 .form-control-edit {
-    display: block;
-    /*width: 100%;
-     height: 34px; */
-    padding: 4px 1px;
+    padding: 2px 2px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
@@ -601,9 +570,7 @@ border-radius: 5px !important;
 	background-repeat:no-repeat;
 	height:462px; 
 	background-position:center;
-	background-size: cover;
-	
-	
+	background-size: cover;	
 	}
 	
 .marquee-content {
@@ -615,26 +582,8 @@ border-radius: 5px !important;
     align-items: center;
     min-height: inherit;
 }
-.no-shape {
-    padding: 100px 0px;
-}
+
 	
-div.linka a:link {
-	color: #FFF;
-	text-decoration: none;
-}
-div.linka a:visited {
-	text-decoration: none;
-	color: #FFF;
-}
-div.linka a:hover {
-	text-decoration: none;
-	color: #FFF;
-}
-div.linka a:active {
-	text-decoration: none;
-	color: #FFF;
-}	
 
 .carousel-indicators .active {
 	    background-color:#3c3c3c !important;
@@ -649,11 +598,12 @@ div.linka a:active {
 		  display: none;
 		  background: #00974B;
 		  border: thin solid #2e9756;
-		  border-radius: 3px;
+		  border-radius: 100px;
 		  position: fixed;
 		  right: 15px;
-		  bottom:2px;
-		  z-index: 999999999;
+		  bottom:15px;
+          z-index: 999999999;          
+          padding: 25px
 		}
 /*evento hover*/
 		.boton-subir:hover{
@@ -661,6 +611,9 @@ div.linka a:active {
 		}
 /*estilos para el tag i*/
 		.boton-subir i{
+          position: absolute;
+          top:6px;
+          left:7px;
 		  color: #fff;
 		  font-size: 1.5em;
 		  padding: 10px 10px 10px 7px;
@@ -774,13 +727,7 @@ ol.process2 li:active i {
     background: #e95959!important;
 }
 
-/* MARGIN CARACTERISTICAS */
 
-.caracteristicas {
-    margin-top: 20px;
-    
-    padding: 0;
-}
 /* hover caracteristicas */
 .scale {
     color: #444;
@@ -814,14 +761,7 @@ ol.process2 li:active i {
 }				
  
 /* TESTIMONIOS CLIENTS HOME */ 
- 
-.testimonial {
-    padding: 30px 0;
-    background: url(dist/img/fondo_testimonios.png) no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-} 
- 
+  
 .panel-heading-edit-testimonials {
 	margin-top:20px;
 	padding-top:20px;

@@ -6,7 +6,8 @@ $white:    #fff !default;
 $black:    #000 !default;
 $light:    #f5f7f8 !default;
 $purple:   #9e42b5 !default;
-
+$dark :    #403f3f !default;
+ 
 $brand-primary:         #428bca !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;

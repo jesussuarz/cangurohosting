@@ -35,15 +35,15 @@
 <body>
 
   <div class="p-0 bheader_in" id="subir">
-    <div class="container pre-header-container">
+    <div class="container">
       <div class="row row-flex row-flex-wrap align-items-center">
-        <div class="col-md-6 hidden-xs hidden-sm hidden-md social-network pl-3">
+        <div class="col-lg-6 hidden-xs hidden-sm hidden-md social-network pl-3">
           <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
           <a href=""><i class="fab fa-twitter fa-lg"></i></a>
           <a href=""><i class="fab fa-slack fa-lg"></i></a>
           <a href=""><i class="fab fa-skype fa-lg"></i></a>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="d-flex justify-content-end align-items-center">
             <span class="font-weight-light">Divisa</span>
             <form name="divisa" class="px-1">
@@ -55,8 +55,8 @@
               </select>
             </form>
             <div class="loginbtnsimple">
-              <div class="btn-group" role="group" aria-label="">
-                <span class="btn p-0 shadow-none" data-toggle="modal" data-target="#exampleModal">
+              <div class="mega-menu" role="group" aria-label="">
+                <span class="p-0 shadow-none">
                   <span class="fas fa-user"></span> Iniciar sesión
                   <b class="caret"></b>
                 </span>
@@ -72,6 +72,52 @@
         </div>
       </div>
     </div>
+
+    <div class="mega-menu-container m-0 p-0 bg-light py-2 bg-light hidden">
+      <ul class=" m-0 bg-light">
+        <li class="col-sm-3">
+          <ul>
+            <li class="dropdown-header">Men Collection</li>
+            <li>
+              <img src="https://picsum.photos/215/150/?random" alt="" class="img-rounded">
+
+            </li>
+          </ul>
+        </li>
+        <li class="col-sm-3">
+          <ul>
+            <li class="dropdown-header">Features</li>
+            <li><a href="#">Auto Carousel</a></li>
+            <li><a href="#">Carousel Control</a></li>
+            <li><a href="#">Left & Right Navigation</a></li>
+            <li><a href="#">Four Columns Grid</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Fonts</li>
+            <li><a href="#">Glyphicon</a></li>
+            <li><a href="#">Google Fonts</a></li>
+          </ul>
+        </li>
+        <li class="col-sm-3">
+          <ul>
+            <li class="dropdown-header">Plus</li>
+            <li><a href="#">Navbar Inverse</a></li>
+            <li><a href="#">Pull Right Elements</a></li>
+            <li><a href="#">Coloured Headers</a></li>
+            <li><a href="#">Primary Buttons & Default</a></li>
+          </ul>
+        </li>
+        <li class="col-sm-3">
+          <ul>
+            <li class="dropdown-header">Much more</li>
+            <li><a href="#">Easy to Customize</a></li>
+            <li><a href="#">Calls to action</a></li>
+            <li><a href="#">Custom Fonts</a></li>
+            <li><a href="#">Slide down on Hover</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
   <!-- Button trigger modal -->
@@ -205,7 +251,7 @@
         </ul>
 
         <div class="nav navbar-nav pull-right">
-          <span><a href="#" class="btn success hvr-grow" style="margin-top: 7px;">Ordenar Ahora! <span class="fas fa-shopping-cart"></span></a></span>
+          <span><a href="#" class="btn btn-success-ch hvr-grow" style="margin-top: 7px;">Ordenar Ahora! <span class="fas fa-shopping-cart"></span></a></span>
         </div>
       </div>
     </div>
@@ -337,7 +383,7 @@
   <div class="bg-purple hidden-xs">
     <div class="container">
       <div class="col-lg-12">
-        <h3 class="my-2 text-center text-white">Ahorra un 10% en tu próximo pedido nuevo. Usa el
+        <h3 class="my-2 text-center text-white font-weight-bold">Ahorra un 10% en tu próximo pedido nuevo. Usa el
           código <span style="color:#6e0c86">PROMO2019</span> durante el pago. <a href="#" class="text-white"><u>Detalles</u></a></h3>
       </div>
     </div>
@@ -541,9 +587,9 @@
     </div>
   </div>
 
-  <div class="bg-light hidden-xs">
+  <div class="testimonial hidden-xs">
     <div class="container">
-      <div class="row my-5">
+      <div class="row mt-5 mb-2">
         <div class="col-lg-12">
           <h3 class="text-center mt-0 mb-4 font-weight-bold display-2">¿Por qué elegirnos? </h3>
           <div class="row text-center">
@@ -597,7 +643,7 @@
     </div>
   </div>
 
-  <div class="testimonial">
+  <div class="">
     <div class="container my-5 ">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -764,7 +810,7 @@
           <p><a href="skype:cangurohosting?call"><i class="fab fa-skype"></i> CanguroHosting</a></p>
           <p><a href="mailto:info@cangurohosting.com"><i class="fa fa-envelope"></i> Enviar Ticket</a></p>
           <p><a href="networkissuesrss"><i class="fa fa-rss"></i> RSS</a></p>
-          <p><a href="metodosdepagos"><i class="fas fa-credit-card fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i>
+          <p><a href="metodosdepagos" class="text-decoration-none"><i class="fas fa-credit-card fa-2x"></i> <i class="fab fa-cc-paypal fa-2x"></i>
               <i class="fab fa-cc-visa fa-2x"></i> <i class="fab fa-cc-mastercard fa-2x"></i> </a></p>
         </div>
         <div class="col-lg-12">
@@ -840,11 +886,24 @@
 
     $(function () {
 
+      $(".mega-menu").click(
+        function () {
+          $(this).toggleClass('bg-light');
+          $('.mega-menu-container').toggleClass('show');
+          $('b', this).toggleClass("caret caret-up");
+        },
+      );
+
+      $(".mega-menu-container").mouseleave(function () {
+        $('.mega-menu').toggleClass('bg-light');
+        $('.mega-menu-container').toggleClass('show');
+        $('b', this).toggleClass("caret caret-up");
+      });
 
       $(".dropdown").hover(
         function () {
           $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("fast");
-          $(this).toggleClass('open');
+          $('.mega-menu-container').toggleClass('open');
           $('b', this).toggleClass("caret caret-up");
         },
         function () {

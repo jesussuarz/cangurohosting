@@ -67,7 +67,11 @@ function watch() {
     gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
+<<<<<<< HEAD
 var build = gulp.parallel(themes, styles, scripts, watch);
+=======
+var build = gulp.parallel(styles, themes, scripts, watch);
+>>>>>>> da5bcf4159c1cb16e491fb13de6cd8f2e8e8d61b
 
 gulp.task(build);
 gulp.task('default', build);

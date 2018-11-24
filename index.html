@@ -33,7 +33,7 @@
 
 </head>
 
-<body>
+<body id="subir">
 
 
   <nav class="navbar navbar-white" style="z-index: 9030; min-height: 30px">
@@ -116,94 +116,6 @@
       </div>
     </div>
   </nav>
-
-
-  <!-- 
-  <div class="p-0 bheader_in" id="subir">
-    <div class="container">
-      <div class="row row-flex row-flex-wrap align-items-center">
-        <div class="col-lg-6 hidden-xs hidden-sm hidden-md social-network pl-3">
-          <a href=""><i class="fab fa-facebook-f fa-lg"></i></a>
-          <a href=""><i class="fab fa-twitter fa-lg"></i></a>
-          <a href=""><i class="fab fa-slack fa-lg"></i></a>
-          <a href=""><i class="fab fa-skype fa-lg"></i></a>
-        </div>
-        <div class="col-lg-6">
-          <div class="d-flex justify-content-end align-items-center">
-            <span class="font-weight-light">Divisa</span>
-            <form name="divisa" class="px-1">
-              <select name="seleccionar" class="form-control-edit" onChange="go()">
-                <option value="/ES">USD</option>
-                <option value="/US">EUR</option>
-                <option value="/ES">COP</option>
-                <option value="/US">BSS</option>
-              </select>
-            </form>
-            <div>
-              <div class="mega-menu" role="group" aria-label="">
-                <span class="p-0 shadow-none">
-                  <span class="fas fa-user"></span> Iniciar sesión
-                  <b class="caret"></b>
-                </span>
-              </div>
-               <div class="btn-group nopadding" role="group" aria-label="">
-                <span class="btn btn-default shadow-none" data-toggle="modal" data-target="#exampleModal">
-                  <span class="fas fa-user"></span> Iniciar sesión</span>
-                <span id="register" class="btn btn-default active shadow-none"><span class="fas fa-user-plus"></span>
-                  Crear Cuenta</span>
-              </div> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mega-menu-container m-0 p-0 bg-light py-2 bg-light hidden">
-      <ul class=" m-0 bg-light">
-        <li class="col-sm-3">
-          <ul>
-            <li class="dropdown-header">Men Collection</li>
-            <li>
-              <img src="https://picsum.photos/215/150/?random" alt="" class="img-rounded">
-
-            </li>
-          </ul>
-        </li>
-        <li class="col-sm-3">
-          <ul>
-            <li class="dropdown-header">Features</li>
-            <li><a href="#">Auto Carousel</a></li>
-            <li><a href="#">Carousel Control</a></li>
-            <li><a href="#">Left & Right Navigation</a></li>
-            <li><a href="#">Four Columns Grid</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Fonts</li>
-            <li><a href="#">Glyphicon</a></li>
-            <li><a href="#">Google Fonts</a></li>
-          </ul>
-        </li>
-        <li class="col-sm-3">
-          <ul>
-            <li class="dropdown-header">Plus</li>
-            <li><a href="#">Navbar Inverse</a></li>
-            <li><a href="#">Pull Right Elements</a></li>
-            <li><a href="#">Coloured Headers</a></li>
-            <li><a href="#">Primary Buttons & Default</a></li>
-          </ul>
-        </li>
-        <li class="col-sm-3">
-          <ul>
-            <li class="dropdown-header">Much more</li>
-            <li><a href="#">Easy to Customize</a></li>
-            <li><a href="#">Calls to action</a></li>
-            <li><a href="#">Custom Fonts</a></li>
-            <li><a href="#">Slide down on Hover</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div> 
-
-  </div> -->
 
   <!-- Button trigger modal -->
   <!-- Modal -->
@@ -974,21 +886,6 @@
     }
 
     $(function () {
-
-      // $(".mega-menu").click(
-      //   function () {
-      //     $(this).toggleClass('bg-light');
-      //     $('.mega-menu-container').toggleClass('show');
-      //     $('b', this).toggleClass("caret caret-up");
-      //   },
-      // );
-
-      // $(".mega-menu-container").mouseleave(function () {
-      //   $('.mega-menu').toggleClass('bg-light');
-      //   $('.mega-menu-container').toggleClass('show');
-      //   $('b', this).toggleClass("caret-up");
-      // });
-
       $(".dropdown").hover(
         function () {
           $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("fast");

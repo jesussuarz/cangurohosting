@@ -6064,7 +6064,8 @@ a.bg-purple:focus {
   background-color: #05c155; }
 
 .pre-header-container {
-  padding: 5px 0; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .social-network {
   padding-left: 35px; }

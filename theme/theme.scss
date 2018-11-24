@@ -152,7 +152,8 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 }
 
 .pre-header-container{
-    padding: 5px 0
+    padding-top: 5px ;
+    padding-bottom: 5px;
 }
 
 .social-network{

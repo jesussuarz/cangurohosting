@@ -6360,7 +6360,7 @@ a.bg-purple:focus {
 
 .btn-success-ch {
   color: #fff;
-  background: #00a63f !important;
+  background: #00a63f;
   border-color: #4cae4c; }
 
 .btn-success-ch:hover {

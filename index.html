@@ -54,7 +54,7 @@
                 <option value="/US">BSS</option>
               </select>
             </form>
-            <div class="loginbtnsimple">
+            <div>
               <div class="mega-menu" role="group" aria-label="">
                 <span class="p-0 shadow-none">
                   <span class="fas fa-user"></span> Iniciar sesión
@@ -897,13 +897,13 @@
       $(".mega-menu-container").mouseleave(function () {
         $('.mega-menu').toggleClass('bg-light');
         $('.mega-menu-container').toggleClass('show');
-        $('b', this).toggleClass("caret caret-up");
+        $('b', this).toggleClass("caret-up");
       });
 
       $(".dropdown").hover(
         function () {
           $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeIn("fast");
-          $('.mega-menu-container').toggleClass('open');
+          $(this).toggleClass('open');
           $('b', this).toggleClass("caret caret-up");
         },
         function () {

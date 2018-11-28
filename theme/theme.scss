@@ -94,6 +94,10 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
     flex:0;
 }
 
+.rounded{
+  border-radius: 3px
+}
+
 // .row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
 // 	 margin:-.2px; /* hack adjust for wrapping */
 // }
@@ -113,6 +117,14 @@ $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !
 
 
 // Custom css
+
+@media (max-width:map-get($grid-breakpoints, sm)){
+
+
+  .display-2{
+    font-size: 3.5rem;
+  }
+}
 
 :focus {outline:0;}	
 ::-moz-focus-inner {outline:0;} 

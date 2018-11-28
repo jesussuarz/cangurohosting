@@ -13,6 +13,9 @@
   align-content: flex-start;
   flex: 0; }
 
+.rounded {
+  border-radius: 3px; }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6027,6 +6030,10 @@ a.bg-purple:focus {
 
 .text-reset {
   color: inherit !important; }
+
+@media (max-width: 768px) {
+  .display-2 {
+    font-size: 3.5rem; } }
 
 :focus {
   outline: 0; }

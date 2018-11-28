@@ -6033,7 +6033,31 @@ a.bg-purple:focus {
 
 @media (max-width: 768px) {
   .display-2 {
-    font-size: 3.5rem; } }
+    font-size: 3.5rem; }
+  .display-3 {
+    font-size: 2.8rem; } }
+
+.bg-darked {
+  background: #363942; }
+
+.text-white-a .dropdown-header {
+  color: #fff !important; }
+
+.text-white-a a {
+  color: #fff !important; }
+
+.nav-item > li {
+  border-right: 0 !important; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #53565F !important; }
+
+.navbar-white {
+  z-index: 9030;
+  min-height: 30px;
+  background: #232529;
+  border-radius: 0; }
 
 :focus {
   outline: 0; }
@@ -6094,7 +6118,7 @@ a.bg-purple:focus {
 .foot .social-network a {
   margin-left: 15px; }
 
-.mega-dropdown {
+.mega-dropdown, .m-dropdown {
   position: static !important; }
 
 .mega-dropdown-menu {
